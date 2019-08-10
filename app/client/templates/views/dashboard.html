@@ -1,7 +1,4 @@
 <template name="views_dashboard">
-    {{#if isMist }}
-      {{>mist_alert}}
-    {{/if}}
 
     <div class="dapp-container">
 
@@ -38,34 +35,34 @@
             {{/if}}
 
 
-            <h2>{{i18n "wallet.accounts.walletsTitle"}}</h2>
+            <!--<h2>{{i18n "wallet.accounts.walletsTitle"}}</h2>-->
 
-            {{#if hasMinimumBalance}}
-                <p>
-                    {{i18n "wallet.accounts.walletsDescription"}}
-                </p>
-            {{else}}
-                <p>
-                    {{{i18n "wallet.accounts.walletsDescriptionNotEnoughFunds"}}}
-                </p>
-            {{/if}}
+            <!--{{#if hasMinimumBalance}}-->
+                <!--<p>-->
+                    <!--{{i18n "wallet.accounts.walletsDescription"}}-->
+                <!--</p>-->
+            <!--{{else}}-->
+                <!--<p>-->
+                    <!--{{{i18n "wallet.accounts.walletsDescriptionNotEnoughFunds"}}}-->
+                <!--</p>-->
+            <!--{{/if}}-->
 
 
 
-            <div class="wallet-box-list">
-            {{#each wallets}}
-                {{> elements_account account=_id wallets=true}}
-            {{/each}}
-            </div>
+            <!--<div class="wallet-box-list">-->
+            <!--{{#each wallets}}-->
+                <!--{{> elements_account account=_id wallets=true}}-->
+            <!--{{/each}}-->
+            <!--</div>-->
 
-            {{#if hasMinimumBalance}}
-                <a href="{{pathFor route='createAccount'}}" class="wallet-box create">
-                    <div class="account-pattern">
-                        +
-                    </div>
-                    <h3>{{i18n "wallet.app.buttons.addWallet"}}</h3>
-                </a>
-            {{/if}}
+            <!--{{#if hasMinimumBalance}}-->
+                <!--<a href="{{pathFor route='createAccount'}}" class="wallet-box create">-->
+                    <!--<div class="account-pattern">-->
+                        <!--+-->
+                    <!--</div>-->
+                    <!--<h3>{{i18n "wallet.app.buttons.addWallet"}}</h3>-->
+                <!--</a>-->
+            <!--{{/if}}-->
 
         {{else}}
             <div class="col col-5 mobile-full ">

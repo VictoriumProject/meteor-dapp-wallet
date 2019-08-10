@@ -95,7 +95,7 @@ Return the current unit
 @method (unit)
 **/
 Template.registerHelper('unit', function(){
-    return EthTools.getUnit();
+    return "VIC";
 });
 
 /**
